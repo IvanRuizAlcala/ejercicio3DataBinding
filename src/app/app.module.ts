@@ -3,14 +3,22 @@ import { BrowserModule, provideClientHydration, withEventReplay } from '@angular
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { StringInterpolationComponentComponent } from './string-interpolation-component/string-interpolation-component.component';
+import { TwoWayPersonComponent } from './two-way-person/two-way-person.component';
+import { FormsModule } from '@angular/forms';
+import { NgforComponent } from './ngfor/ngfor.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    StringInterpolationComponentComponent,
+    TwoWayPersonComponent,
+    NgforComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [
     provideClientHydration(withEventReplay())

@@ -1,0 +1,18 @@
+<table>
+  <tr *ngFor="let item of lista">
+    <td>
+            {{item}}
+  </td>
+    </tr>
+</table>
+<p> siguiente tabla</p>
+<table>
+  <tr *ngFor="let item of lista;let indice = index">
+    <td style="color:green">
+      {{indice+1}}
+    </td>
+    <td style="color:red">
+            {{item}}
+  </td>
+    </tr>
+</table>
